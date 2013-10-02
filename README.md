@@ -20,6 +20,8 @@ according to popularity and/or a "featured" tag.
         trophy_case:
             num_items: 3
 
+You can adjust **num_items** to process a different number of elements.
+
 3. Add trophy\_case.html to your include folder.
 
 # Usage
