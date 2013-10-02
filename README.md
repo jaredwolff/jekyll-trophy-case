@@ -9,18 +9,20 @@ according to popularity and/or a "featured" tag.
 
 0. (Not required but encouraged) I used [jekyll\_ga](https://github.com/developmentseed/jekyll-ga) to reorder my posts by most popular. I find this funtionality complements the ability to also feature a post.
 
-1. Add this repo as a submodule to your Jekyll Git project:
+1. _trophy\_case.html_ requires use of [image_tag](https://github.com/robwierzbowski/jekyll-image-tag)
+
+2. Add this repo as a submodule to your Jekyll Git project:
 
         git submodule add git@github.com:jaredwolff/trophy_case.git _plugins/trophy_case/
 
     Note: You can also copy **trophy\_case.rb** to _plugins/
 
-2. Add the following fields to your _config.yml:
+3. Add the following fields to your _config.yml:
 
         trophy_case:
             num_items: 3
 
-3. Add trophy\_case.html to your include folder.
+4. Add trophy\_case.html to your include folder.
 
 # Usage
 
@@ -50,6 +52,13 @@ Here is an example of code inside my Jekyll project. Trophy case adds the **trop
         {% endfor %}
       </ul>
     </div>
+
+Requires the use of the following post variables:
+
+    thumbnail: <filename>
+    featured: <true|false>
+
+Where _featured_ will put this item at the front of the list and thumbnail is the thumbnail picture of the post. _Note:_ If nothing is entered image\_tag will throw an error. 
 
 #Notes
 
