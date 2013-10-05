@@ -1,6 +1,6 @@
-<li class="text-left thumbnail">
-  <a href="{{ site.url }}{{ post.url }}">
-  {% image trophy_case {{ post.thumbnail }} alt="{{ post.description }}" %}
-  <h1>{{ post.title }}</h1>
+<li class="text-left display-inline-block">
+  <a class="trophy-case-text" href="{{ site.url }}{{ post.url }}">
+  {% image trophy_case {{ post.thumbnail }} alt="{{ post.description }}" class="thumbnail"%}
+  <div class="trophy-case-text">{{ post.title }}</div>
   </a>
 </li>
