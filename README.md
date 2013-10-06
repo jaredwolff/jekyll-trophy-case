@@ -2,9 +2,9 @@ Trophy Case
 ===========
 **by jaredwolff**
 
-Trophy Case can be used in conjunction with [jekyll_ga](https://github.com/developmentseed/jekyll-ga) to generate the order of a specialized post preview 
-according to popularity and/or a "featured" tag.
+Trophy Case can be used in conjunction with [jekyll_ga](https://github.com/developmentseed/jekyll-ga) to generate the order of a specialized post preview according to popularity and/or a "featured" tag.
 
+![Trophy Case Preview](trophy_case_preview.jpg)
 # Installation
 
 0. (Not required but encouraged) I used [jekyll\_ga](https://github.com/developmentseed/jekyll-ga) to reorder my posts by most popular. I find this funtionality complements the ability to also feature a post.
@@ -61,6 +61,58 @@ Requires the use of the following post variables:
     featured: <true|false>
 
 Where _featured_ will put this item at the front of the list and thumbnail is the thumbnail picture of the post. _Note:_ If nothing is entered image\_tag will throw an error. 
+
+Here is the styling i've used to make it look pretty:
+
+    /* Trophy case */
+    
+    .trophy-case {
+      margin: 40px 0 10px 0;
+    }
+    
+    .trophy-case ul {
+      max-width: 650px;
+      height: 160px;
+    }
+    
+    .trophy-case a {
+      text-decoration: none;
+      color: black;
+    }
+    
+    .trophy-case a:hover {
+      color: gray;
+    }
+    
+    .trophy-case li {
+      vertical-align: top;
+      max-width: 208px;
+      height: 160px;
+      padding-right: 2px;
+      padding-left: 2px;
+    }
+    
+    .trophy-case img {
+      margin: 0;
+      opacity: 0.7;
+      filter: alpha(opacity=70);
+    }
+    
+    .trophy-case-text {
+      font-family: inherit;
+      font-weight: bold;
+      line-height: 20px;
+      color: inherit;
+      text-rendering: optimizelegibility;
+      
+      font-size: 15px;
+      margin: 0 0 0 10px;
+      line-height: 100%;
+    }
+
+In conjunction with using Bootstrap will get something that looks like this:
+
+![Trophy Case Preview](trophy_case_preview.jpg)
 
 #Notes
 
