@@ -1,6 +1,5 @@
 Trophy Case
 ===========
-**by jaredwolff**
 
 Trophy Case can be used in conjunction with [jekyll_ga](https://github.com/developmentseed/jekyll-ga) to generate the order of a specialized post preview according to popularity and/or a "featured" tag.
 
@@ -9,7 +8,7 @@ Trophy Case can be used in conjunction with [jekyll_ga](https://github.com/devel
 
 0. (Not required but encouraged) I used [jekyll\_ga](https://github.com/developmentseed/jekyll-ga) to reorder my posts by most popular. I find this funtionality complements the ability to also feature a post.
 
-1. _trophy\_case.html_ requires use of [image_tag](https://github.com/robwierzbowski/jekyll-image-tag)
+1. **trophy\_case.html** requires use of [image_tag](https://github.com/robwierzbowski/jekyll-image-tag)
 
 2. Add this repo as a submodule to your Jekyll Git project:
 
