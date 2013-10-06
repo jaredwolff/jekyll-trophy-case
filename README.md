@@ -2,7 +2,7 @@ Trophy Case
 ===========
 **by jaredwolff**
 
-Trophy Case can be used in conjunction with Jekyll_GA to generate the order of a specialized post preview 
+Trophy Case can be used in conjunction with [jekyll_ga](https://github.com/developmentseed/jekyll-ga) to generate the order of a specialized post preview 
 according to popularity and/or a "featured" tag.
 
 # Installation
