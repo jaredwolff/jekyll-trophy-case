@@ -38,14 +38,14 @@ Here is an example of code inside my Jekyll project. Trophy case adds the **trop
         {% break %}
         {% endif %}
         {% endfor %}
-
+        
         {% for post in site.posts %}
         {% if post.trophy_order == 2 %}
         {% include trophy_case.html %}
         {% break %}
         {% endif %}
         {% endfor %}
-
+        
         {% for post in site.posts %}
         {% if post.trophy_order == 3 %}
         {% include trophy_case.html %}
