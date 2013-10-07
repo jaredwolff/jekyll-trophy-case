@@ -54,7 +54,7 @@ Here is an example of code inside my Jekyll project. Trophy case adds the **trop
       </ul>
     </div>
 
-Requires the use of the following post variables:
+Requires the use of the **thumbnail** and **featured** header variables:
 
     layout: post
     title: "Example post header."
