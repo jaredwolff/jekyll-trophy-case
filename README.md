@@ -56,6 +56,13 @@ Here is an example of code inside my Jekyll project. Trophy case adds the **trop
 
 Requires the use of the following post variables:
 
+    layout: post
+    title: "Example post header."
+    author: jared
+    date: 2013-10-06
+    description: Post description!
+    category: 
+    tags: []
     thumbnail: <filename>
     featured: <true|false>
 
