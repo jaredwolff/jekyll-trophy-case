@@ -13,7 +13,7 @@ module Jekyll
       trophy_case = []
 
       # First iterate through to find the featured posts
-      for post in site.posts.reverse
+      for post in site.posts.docs.reverse
         if count <= num_items
 
           if !check_for_thumbnail(post)
@@ -33,7 +33,7 @@ module Jekyll
       end
 
       # Then iterate through to fill in the empty spaces (if they exist)
-      for post in site.posts.reverse
+      for post in site.posts.docs.reverse
 
         if !check_for_thumbnail(post)
           next
