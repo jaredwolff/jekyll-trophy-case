@@ -20,8 +20,8 @@ module Jekyll
             next
           end
 
-          if post.data['featured'] and not featured_titles.include? post.title
-            featured_titles << post.title
+          if post.data['featured'] and not featured_titles.include? post.data['title']
+            featured_titles << post.data['title']
 
             post.data.merge!("trophy_order" => count)
 
@@ -40,8 +40,8 @@ module Jekyll
         end
 
         if count <= num_items
-          if not featured_titles.include? post.title
-            featured_titles << post.title
+          if not featured_titles.include? post.data['title']
+            featured_titles << post.data['title']
 
             post.data.merge!("trophy_order" => count)
 
@@ -58,7 +58,7 @@ module Jekyll
       if post.data['thumbnail']
         return true
       else
-        puts "Warning: \"#{post.title}\" does not have a thumbnail image specified. It will not be included in the Trophy Case!"
+        puts "Warning: \"#{post.data['title']}\" does not have a thumbnail image specified. It will not be included in the Trophy Case!"
         return false
       end
     end
